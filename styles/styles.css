@@ -23,6 +23,10 @@
 .primary-btn{
     background-color: var(--primary-color);
 }
+button{
+    cursor:pointer;
+    transition: all 0.5s;
+}
 .secondary-btn{
     background-color: var(--secondary-color);
 }
@@ -34,6 +38,17 @@
     color: #FFFFFF;
     font-weight: 600;
     font-size: 1rem;
+}
+.light-btn{
+    background: #FFFFFF;
+    color: var(--primary-color);
+}
+
+.primary-btn:hover, 
+.secondary-btn:hover, 
+.light-btn:hover{
+    background: #0b0223;
+    color: #FFFFFF;
 }
 .dark-text{
     color: #000000;
@@ -57,7 +72,6 @@ nav .container,
 .header-content .container,
 .gamer .container,
 .gamer-vantage .container .vantage,
-.careers .container,
 .careers .career-list{
     display: flex;
     justify-content: space-between;
@@ -71,8 +85,9 @@ nav{
     padding: 1.5rem 0;
 }
 
-.logo h2{
+.logo h2, .logo .primary-color{
     font-size: 2.8rem;
+    font-weight: 700;
 }
 .logo img{
     width: 60px;
@@ -215,17 +230,26 @@ nav ul li.social-link i.fa-tiktok{
 .careers * {
     color: #FFFFFF;
 }
+.light-btn{
+    color: var(--primary-color);
+}
 .careers{
     background-color: var(--primary-color);
+    padding: 3rem 0;
     margin-top: 3rem;
+}
+.careers .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .careers .career-list li{
     list-style: none;
     line-height: 2;
 }
-.careers .title-text {
-    padding-bottom: 1rem;
-}
+
+.careers .career-list{
+    padding: 1.5rem 0;
+} 
 .careers .title-text h2{
     padding: 1rem 0;
     font-size: 3rem;
@@ -234,9 +258,8 @@ nav ul li.social-link i.fa-tiktok{
     font-weight: 400;
 }
 .careers .career-image img{
-    max-width: 600px;
-}
-
+    max-width: 100%;
+} 
 /* Catagories Section Styles */
 .catagories{
     background: #fff9fc;

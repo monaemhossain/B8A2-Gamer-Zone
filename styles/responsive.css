@@ -51,10 +51,8 @@
         margin-top: 0;
     }
     .careers .container{
-        flex-direction: column;
+        grid-template-columns: 100%;
         text-align: center;
-        padding-top: 2rem;
-        gap: 5px;
     }
     .careers .career-image img{
         width: 95%;
