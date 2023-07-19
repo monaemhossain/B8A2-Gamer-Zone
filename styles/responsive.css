@@ -35,7 +35,7 @@
     }   
 /* Gamer Section */
     .gamer .container{
-        flex-direction: column;
+        flex-direction: column-reverse;
         
     }
     .gamer .gamer-text{
@@ -45,6 +45,15 @@
     .gamer-img img{
         width: 95%;
     }
+
+/* Online Games Section */
+.online-games .game-cards{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
 }
 
 /* For Mobile Devices */
@@ -67,7 +76,7 @@
 
     /* Gamer Section */
     .gamer .container{
-        flex-direction: column;
+        flex-direction: column-reverse;
         
     }
     .gamer .gamer-text{
@@ -77,5 +86,11 @@
     .gamer-img img{
         width: 95%;
     }
+
+/* Online Games Section */
+.online-games .game-cards{
+    grid-template-columns: repeat(1, 1fr);
+}
+
 }
 

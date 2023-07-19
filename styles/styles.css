@@ -50,8 +50,9 @@
     font-size: 3rem;
     font-weight: 800;
 }
-
-
+.section-space{
+    padding: 2rem 0;
+}
 
 
 /* Navigation Bar Styles */
@@ -106,7 +107,7 @@ nav ul li.social-link i.fa-tiktok{
 .header-content {
     background: url(../images/Group14.png) no-repeat;
     background-size: 50% 100%;
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 
 .header-content .head-text h2
@@ -154,4 +155,27 @@ nav ul li.social-link i.fa-tiktok{
 .gamer .quote{
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+/* Online Games section Styles */
+.online-games .section-title{
+    text-align: center;
+}
+
+.online-games .section-title h2,
+.online-games .section-title .gradient-text{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.online-games .section-title p{
+    padding: 1rem 0;
+}
+.online-games .game-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.online-games .game-cards .card img{
+    width: 100%;
+    margin: 0.8rem 0 1rem 0;
 }
