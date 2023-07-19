@@ -272,3 +272,47 @@ nav ul li.social-link i.fa-tiktok{
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
+
+/* Styles for Footer */
+.light-text{
+    color: #FFFFFF;
+}
+footer{
+    background: #0b0223;
+    padding: 3rem 0;
+}
+footer .container div{
+    padding: 1rem 0;
+    text-align: center;
+}
+footer .footer-nav ul,
+footer .footer-social-links ul,
+footer .terms-policies ul{
+    display: flex;
+    justify-content: center;
+}
+footer .footer-nav ul li,
+footer .footer-social-links ul li,
+footer .terms-policies ul li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+footer .footer-nav li a,
+footer .footer-social-links li a i,
+footer .terms-policies ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+
+footer .footer-social-links li a i{
+    font-size: 1.5rem;
+}
+footer .footer-nav li a:hover,
+footer .footer-social-links li a:hover i{
+    color: var(--primary-color);
+}
+footer .terms-policies ul li a{
+    color: unset;
+}

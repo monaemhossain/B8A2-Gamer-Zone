@@ -118,4 +118,15 @@
     .gamer-vantage .vantage.section-spacing{
         padding-top: 0;
     }
+/* footer section */
+    footer .footer-nav ul{
+        flex-direction: column;
+    }
+    
+    footer .footer-nav ul li{
+        margin:0.6rem 0;
+    }
+    footer .footer-nav ul a{
+        padding: 0.8rem 0;
+    }
 }
