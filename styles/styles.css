@@ -1,14 +1,10 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;800;900&display=swap');
-
 /* Variables */
 :root{
     --primary-color: #ff42a5;
     --secondary-color: #4ec5f7;
 }
-
-
-
 /* global styles */
 *{
     margin: 0;
@@ -50,20 +46,22 @@
     font-size: 3rem;
     font-weight: 800;
 }
-.section-space{
+.section-spacing{
     padding: 2rem 0;
 }
-
-
+p{
+    line-height: 1.5rem;
+}
 /* Navigation Bar Styles */
 nav{
     box-shadow: 0 0 20px -15px #534c64;
     padding: 1.5rem 0;
 }
-/* Sharing styles with .header-content .container */
+/* Sharing styles with .header-content .container, .gamer .container, .gamer-vantage .container .vantage*/
 nav .container, 
 .header-content .container,
-.gamer .container{
+.gamer .container,
+.gamer-vantage .container .vantage{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,14 +100,12 @@ nav ul li.social-link i.fa-youtube{
 nav ul li.social-link i.fa-tiktok{
     color: #000000;
 }
-
 /* Header content styles */
 .header-content {
     background: url(../images/Group14.png) no-repeat;
     background-size: 50% 100%;
     padding-top: 1rem;
 }
-
 .header-content .head-text h2
 {
     font-size: 3rem;
@@ -120,10 +116,7 @@ nav ul li.social-link i.fa-tiktok{
     font-size: 6rem;
     font-weight: 800;
 }
-.header-content .facilities{
-    padding: 1rem 0;
-    line-height: 1.7rem;
-}
+.header-content .facilities,
 .header-content .buttons{
     padding: 1rem 0;
 }
@@ -134,14 +127,11 @@ nav ul li.social-link i.fa-tiktok{
     width: 75%;
     float: right;
 }
-
-
 /* Gamer Section Styles */
 .gamer{
     background-color: #fff9fc;
     padding: 1.5rem 0;
 }
-
 .gamer-img img{
     width: 650px;
 }
@@ -156,12 +146,10 @@ nav ul li.social-link i.fa-tiktok{
     font-size: 1.5rem;
     font-weight: 600;
 }
-
 /* Online Games section Styles */
 .online-games .section-title{
     text-align: center;
 }
-
 .online-games .section-title h2,
 .online-games .section-title .gradient-text{
     font-size: 3rem;
@@ -178,4 +166,42 @@ nav ul li.social-link i.fa-tiktok{
 .online-games .game-cards .card img{
     width: 100%;
     margin: 0.8rem 0 1rem 0;
+}
+/* Gamer Vantage Styles */
+.gamer-vantage .container .vantage{
+    gap: 10rem;
+    justify-content: flex-end;
+}
+.gamer-vantage .vantage-text h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.gamer-vantage .vantage.section-spacing{
+    padding-top: 3rem;
+}
+.gamer-vantage .vantage:first-child{
+    text-align: right;
+}
+.gamer-vantage .vantage:last-child{
+    flex-direction: row-reverse;
+    text-align: left;
+}
+.gamer-vantage .vantage .vantage-image{
+    position: relative;
+}
+.gamer-vantage .vantage .over-img{
+    position: absolute;
+    bottom: -40px;
+}
+.gamer-vantage .vantage:first-child .over-img{
+    left: -80px;
+}
+.gamer-vantage .vantage:last-child .over-img{
+    right: -80px;
+}
+.gamer-vantage .vantage .over-img img{
+    max-width: 220px;
+}
+.gamer-vantage .vantage-image img{
+    max-width: 540px;
 }
