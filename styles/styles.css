@@ -47,6 +47,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 800;
 }
 
 
@@ -58,7 +60,9 @@ nav{
     padding: 1.5rem 0;
 }
 /* Sharing styles with .header-content .container */
-nav .container, .header-content .container{
+nav .container, 
+.header-content .container,
+.gamer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,4 +132,26 @@ nav ul li.social-link i.fa-tiktok{
 .header-content .head-banner img{
     width: 75%;
     float: right;
+}
+
+
+/* Gamer Section Styles */
+.gamer{
+    background-color: #fff9fc;
+    padding: 1.5rem 0;
+}
+
+.gamer-img img{
+    width: 650px;
+}
+.gamer .gamer-text{
+    text-align: right;
+    padding-left: 6rem;
+}
+.gamer .gamer-text p{
+    padding: 1rem 0;
+}
+.gamer .quote{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
