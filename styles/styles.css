@@ -187,6 +187,46 @@ nav ul li.social-link i.fa-tiktok{
     width: 100%;
     margin: 0.8rem 0 1rem 0;
 }
+
+
+/* card overlay styles */
+.online-games .card-img{
+    position: relative;
+}
+
+.online-games .card-img .card-overlay p i{
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+.online-games .card-img .card-overlay p:last-child{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.online-games .card-img .card-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:12px;
+    border-radius: 16px;
+    background: #111111;
+    opacity: 0;
+    height: calc(100% - 2rem);
+    width: 100%;
+    transition: all .5s;
+    clear: both;
+    opacity:0;
+}
+.online-games .card-img:hover .card-overlay{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
 /* Gamer Vantage Styles */
 .gamer-vantage .container .vantage{
     gap: 10rem;
