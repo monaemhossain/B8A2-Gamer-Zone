@@ -1,0 +1,72 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800;900&display=swap');
+
+/* Variables */
+:root{
+    --primary-color: #ff42a5;
+    --secdoery-color: #4ec5f7;
+}
+
+
+
+/* global styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    color: #534c64;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.primary-color{
+    color: var(--primary-color)
+}
+.primary-btn{
+    background-color: var(--primary-color);
+    border: 0;
+    padding: 1rem 1.5rem; 
+}
+/* Navigation Bar Styles */
+nav{
+    box-shadow: 0 0 20px -15px #534c64;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.logo img{
+    width: 35px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 0.8rem 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+nav ul li.social-link{
+    background-color: #e7e6e9;
+    border-radius: 8px;
+}
+nav ul li.social-link i{
+    margin: 0 0 0 6px;
+    font-size: 1rem;
+}
+nav ul li.social-link i.fa-youtube{
+    color: #f61c0d
+}
+nav ul li.social-link i.fa-tiktok{
+    color: #000000;
+}
+
