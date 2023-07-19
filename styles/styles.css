@@ -233,7 +233,42 @@ nav ul li.social-link i.fa-tiktok{
 .careers .title-text p{
     font-weight: 400;
 }
-
 .careers .career-image img{
     max-width: 600px;
+}
+
+/* Catagories Section Styles */
+.catagories{
+    background: #fff9fc;
+    padding:4rem 0;
+}
+.catagories ul{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.catagories ul,
+.catagories ul li a{
+    display: flex;
+    align-items: center;
+}
+.catagories ul li{
+    list-style: none;
+}
+.catagories ul li img{
+    width: 60px;
+    margin-right: 10px;
+}
+.catagories ul li a{
+    text-decoration: none;
+    padding: 0px 15px 0px 0;
+    justify-content: unset;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+.catagories ul li a:hover{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
