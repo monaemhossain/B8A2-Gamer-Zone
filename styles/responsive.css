@@ -28,6 +28,9 @@
         text-align: center;
         overflow: hidden;
     }
+    .gamer-vantage .vantage-image{
+        margin-top: 1.5rem;
+    }
     .gamer-vantage .vantage-image img {
         max-width: 75%;
     }
@@ -59,8 +62,12 @@
     nav .logo{
         padding-bottom: 1rem;
     }
+    nav ul {
+        flex-direction: column;
+    }
     nav ul li {
         padding: 0.8rem 0.6rem;
+        flex-direction: column;
     }
     .header-content .head-banner img {
         width: 95%;
@@ -81,6 +88,19 @@
 /* Online Games Section */
     .online-games .game-cards{
         grid-template-columns: repeat(2, 1fr);
+    }
+/* Careers Section styles */
+    .careers {
+        margin-top: 0;
+    }
+    .careers .container{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .careers .career-image img{
+        width: 95%;
+        margin-top: 1.5rem;
     }
 
 }
