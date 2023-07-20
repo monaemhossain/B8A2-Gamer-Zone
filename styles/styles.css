@@ -26,12 +26,13 @@
 button{
     cursor:pointer;
     transition: all 0.5s;
+    border: 1px solid transparent;
 }
 .secondary-btn{
     background-color: var(--secondary-color);
 }
 .primary-btn, .secondary-btn{
-    border: 0;
+    border: 1px solid transparent;
     padding: 1rem 2rem;
     border-radius: 1.5rem;
     text-transform: uppercase;
@@ -43,12 +44,12 @@ button{
     background: #FFFFFF;
     color: var(--primary-color);
 }
-
 .primary-btn:hover, 
 .secondary-btn:hover, 
 .light-btn:hover{
     background: #0b0223;
     color: #FFFFFF;
+    border: 1px solid var(--primary-color);
 }
 .dark-text{
     color: #000000;
@@ -77,8 +78,6 @@ nav .container,
     justify-content: space-between;
     align-items: center;
 }
-
-
 /* Navigation Bar Styles */
 nav{
     box-shadow: 0 0 20px -15px #534c64;
@@ -109,6 +108,9 @@ nav ul li a:hover {
 nav ul li.social-link{
     background-color: #e7e6e9;
     border-radius: 8px;
+}
+nav ul li.social-link:hover{
+    cursor: alias;
 }
 nav ul li.social-link i{
     margin: 0 0 0 6px;
@@ -173,7 +175,7 @@ nav ul li.social-link i.fa-tiktok{
 .online-games .section-title h2,
 .online-games .section-title .gradient-text{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 .online-games .section-title p{
     padding: 1rem 0;
@@ -187,13 +189,10 @@ nav ul li.social-link i.fa-tiktok{
     width: 100%;
     margin: 0.8rem 0 1rem 0;
 }
-
-
 /* card overlay styles */
 .online-games .card-img{
     position: relative;
 }
-
 .online-games .card-img .card-overlay p i{
     color: #FFFFFF;
     font-size: 2rem;
@@ -224,9 +223,6 @@ nav ul li.social-link i.fa-tiktok{
     cursor: pointer;
     opacity: 0.8;
 }
-
-
-
 /* Gamer Vantage Styles */
 .gamer-vantage .container .vantage{
     gap: 10rem;
@@ -265,7 +261,6 @@ nav ul li.social-link i.fa-tiktok{
 .gamer-vantage .vantage-image img{
     max-width: 540px;
 }
-
 /* Careers Section styles */
 .careers * {
     color: #FFFFFF;
@@ -286,7 +281,6 @@ nav ul li.social-link i.fa-tiktok{
     list-style: none;
     line-height: 2;
 }
-
 .careers .career-list{
     padding: 1.5rem 0;
 } 
@@ -305,15 +299,15 @@ nav ul li.social-link i.fa-tiktok{
     background: #fff9fc;
     padding:4rem 0;
 }
-.catagories ul{
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:10px;
-}
 .catagories ul,
 .catagories ul li a{
     display: flex;
     align-items: center;
+}
+.catagories ul{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10px;
 }
 .catagories ul li{
     list-style: none;
@@ -335,7 +329,6 @@ nav ul li.social-link i.fa-tiktok{
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
-
 /* Styles for Footer */
 .light-text{
     color: #FFFFFF;
